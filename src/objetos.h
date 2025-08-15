@@ -1,5 +1,6 @@
 
 #include "Arduino.h"
+#include "MPU6050_light.h"
 enum MotorCommand{
     Frente,
     Tras,
@@ -30,14 +31,17 @@ public:
 
 
 };
-class Gyro
+
+//Gyro
+class Gyro   // biblioteca MPU6050_light
 {
  private:
-   uint8_t GyroPositivo;
-   uint8_t GyroNegativo;
+   uint8_t GyroData;
+   uint8_t GyroClock;
    public:
 
-   Gyro(uint8_t GyroPositivo, uint8_t GyroNegativo){}
+   Gyro(uint8_t GyroData, uint8_t GyroClock){}
+
 
    
 
