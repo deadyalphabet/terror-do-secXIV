@@ -30,4 +30,17 @@ public:
 
 
 };
+class Gyro
+{
+ private:
+   uint8_t GyroPositivo;
+   uint8_t GyroNegativo;
+   public:
+
+   Gyro(uint8_t GyroPositivo, uint8_t GyroNegativo){}
+
+   
+
+
+};
 
